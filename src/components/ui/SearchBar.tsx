@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import searchOutline from "/icons/search-outline.svg";
 import searchOutline2 from "/icons/search-outline2.svg";
 const SearchBar = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const searchRef = useRef<HTMLButtonElement>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSearchBarClicked) {
@@ -10,6 +11,20 @@ const SearchBar = () => {
     }
   };
   const [isSearchBarClicked, setIsSearchBarClicked] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (e: any) => {
+      if (!formRef.current?.contains(e.target)) {
+        setIsSearchBarClicked(false);
+      }
+    };
+
+    window.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("mousedown", handleClickOutside);
+    }; //cleanup function
+  }, [formRef]);
 
   return (
     <div
@@ -20,9 +35,10 @@ const SearchBar = () => {
       }`}
     >
       <button
+        ref={searchRef}
         onClick={() => setIsSearchBarClicked((prev) => !prev)}
         className={`${
-          isSearchBarClicked ? "hidden" : "block"
+          isSearchBarClicked ? "invisible " : "visible"
         } block lg:hidden `}
       >
         <img src={searchOutline2} alt="search-buton" />
@@ -32,7 +48,7 @@ const SearchBar = () => {
         onSubmit={handleSubmit}
         className={`${
           isSearchBarClicked
-            ? "block w-fit top-[10%] left-[37%"
+            ? "block w-fit top-[10%]"
             : "hidden lg:block"
         } ml-5 relative`}
       >
