@@ -1,10 +1,14 @@
+import Header from "./components/layout/Header"
 
 function App() {
 
   return (
     <>
-      
-        <h2 className="text-blue-700">Trello clone</h2>
+      <Header />
+      <main>
+        <section>
+        </section>
+      </main>
     </>
   )
 }
