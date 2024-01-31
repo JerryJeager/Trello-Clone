@@ -9,17 +9,16 @@ import { listType } from "../../types";
 
 const Cards = ({ name, newCard, cards }: listType) => {
   return (
-    <div>
-      <div className="flex justify-between bg-lightGray p-4 w-[90vw] lg:w-[22rem] rounded-xl">
+    <div className="w-[90vw]  sm:w-[20rem] lg:w-[22rem]">
+      <div className="flex justify-between bg-lightGray p-4 w-full rounded-xl">
         <p>{name}</p>
         <img src={combinedDots} alt="dot-icon" />
       </div>
 
       {cards.map((card, index) => (
-        <div className="bg-lightGray rounded-xl p-4 w-[90vw] lg:w-[22rem] mt-2" key={index}>
-          {card.image && <img src={card.image} alt="" />}
+        <div className="bg-lightGray rounded-xl p-4 w-full mt-2" key={index}>
+          {card.image && <img src={card.image} className="w-full" alt="" />}
           <div className="flex flex-wrap gap-2 mt-2">
-            <div className="w-[50px] h-[6px] rounded-md bg-[#0aaaf4]"></div>
             {card.tags.map((tag, tagIndex) => (
               <div
                 key={tagIndex}

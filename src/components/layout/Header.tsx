@@ -9,7 +9,7 @@ import plusCircleOutline from "/icons/plus-circle-outline.svg";
 import oval from "/images/Oval.svg";
 const Header = () => {
   return (
-    <header className="px-[5%] py-3 lg:py-4 border-b border-black border-opacity-[0.1] flex justify-between">
+    <header className="fixed w-screen z-20 bg-white top-0 left-0 px-[5%] py-3 lg:py-4 border-b border-black border-opacity-[0.1] flex justify-between">
       <div className="flex gap-2 items-center">
         <h1 className="hidden lg:block lg:pr-5 right-border border-r-0 lg:border-r">
           <img src={logo} alt="trello-logo" />

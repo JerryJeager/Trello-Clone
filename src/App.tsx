@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="mt-[5rem]">
         <section className="pl-[5%] mt-4 ">
           <div className="flex justify-between pr-[5%]">
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-[7rem]">
@@ -72,7 +72,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="pl-[5%] pb-8 mt-4">
+        <section className="px-[5%] pb-8 mt-4 flex gap-6 overflow-x-scroll w-fit   ">
           {listData.map((list, index) => (
             <Cards key={index} {...list} />
           ))}
