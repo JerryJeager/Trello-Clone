@@ -8,5 +8,5 @@
 }
 
 .right-border{
-    @apply lg:border-r lg:border-r-black lg:border-opacity-[0.1];
+    @apply border-r border-r-black border-opacity-[0.1];
 }

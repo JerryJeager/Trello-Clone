@@ -3,7 +3,6 @@ import searchOutline from "/icons/search-outline.svg";
 import searchOutline2 from "/icons/search-outline2.svg";
 const SearchBar = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const searchRef = useRef<HTMLButtonElement>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSearchBarClicked) {
@@ -35,7 +34,6 @@ const SearchBar = () => {
       }`}
     >
       <button
-        ref={searchRef}
         onClick={() => setIsSearchBarClicked((prev) => !prev)}
         className={`${
           isSearchBarClicked ? "invisible " : "visible"
@@ -47,13 +45,11 @@ const SearchBar = () => {
         ref={formRef}
         onSubmit={handleSubmit}
         className={`${
-          isSearchBarClicked
-            ? "block w-fit top-[10%]"
-            : "hidden lg:block"
+          isSearchBarClicked ? "block w-fit top-[10%]" : "hidden lg:block"
         } ml-5 relative`}
       >
         <input
-          className="bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px] lg:w-[400px] outline-none"
+          className="lg:bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px] lg:w-[400px] outline-none"
           type="text"
         />
         <button type="submit" className="absolute top-2 right-5">
