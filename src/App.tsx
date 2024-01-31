@@ -9,6 +9,8 @@ import Oval1 from "/images/Oval1.svg";
 import Oval2 from "/images/Oval2.svg";
 import Oval3 from "/images/Oval3.svg";
 import Oval4 from "/images/Oval4.svg";
+import Cards from "./components/ui/ListCards";
+import { listData } from "./data/lists";
 
 function App() {
   const userPics: { image: string }[] = [
@@ -69,6 +71,11 @@ function App() {
               <p className="-ml-16 lg:-ml-10 lg:text-xl">Menu</p>
             </div>
           </div>
+        </section>
+        <section className="pl-[5%] pb-8 mt-4">
+          {listData.map((list, index) => (
+            <Cards key={index} {...list} />
+          ))}
         </section>
       </main>
     </>
