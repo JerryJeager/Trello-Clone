@@ -76,6 +76,7 @@ const Cards = ({ name, newCard, cards }: listType) => {
           </div>
         </div>
       ))}
+      {newCard && <div></div>}
     </div>
   );
 };
