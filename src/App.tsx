@@ -22,7 +22,7 @@ function App() {
     <>
       <Header />
       <main>
-        <section className="pl-[5%] mt-4">
+        <section className="pl-[5%] mt-4 ">
           <div className="flex justify-between pr-[5%]">
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-[7rem]">
               <h2 className="font-medium lg:text-2xl">Brackets</h2>

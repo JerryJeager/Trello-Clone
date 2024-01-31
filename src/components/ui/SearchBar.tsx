@@ -29,7 +29,7 @@ const SearchBar = () => {
     <div
       className={`${
         isSearchBarClicked
-          ? "bg-black bg-opacity-40 fixed top-0 left-0 h-screen w-screen lg:w-fit lg:h-fit lg:bg-transparent lg:static"
+          ? "bg-black bg-opacity-40 z-30 fixed top-0 left-0 h-screen w-screen lg:w-fit lg:h-fit lg:bg-transparent lg:static"
           : "bg-transparent"
       }`}
     >
@@ -49,7 +49,7 @@ const SearchBar = () => {
         } ml-5 relative`}
       >
         <input
-          className="lg:bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px] lg:w-[400px] outline-none"
+          className="bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px]  lg:w-[400px] outline-none"
           type="text"
         />
         <button type="submit" className="absolute top-2 right-5">
