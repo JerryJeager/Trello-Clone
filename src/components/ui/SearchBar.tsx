@@ -29,7 +29,7 @@ const SearchBar = () => {
     <div
       className={`${
         isSearchBarClicked
-          ? "bg-black bg-opacity-40 z-30 fixed top-0 left-0 h-screen w-screen lg:w-fit lg:h-fit lg:bg-transparent lg:static"
+          ? "bg-black bg-opacity-40 z-30 fixed top-0 left-0 h-screen w-full lg:w-fit lg:h-fit lg:bg-transparent lg:static"
           : "bg-transparent"
       }`}
     >
