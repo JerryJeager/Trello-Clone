@@ -104,7 +104,7 @@ export const listData: listType[] = [
         tags: [
           { color: "#4339f2" },
           { color: "#ff3838" },
-          { color: "#891b38" },
+          { color: "#891BE8" },
         ],
         comments: 76,
         likes: 45,
@@ -143,7 +143,11 @@ export const listData: listType[] = [
         header: "Types of paper in catalog printing",
         content:
           "Branding is no longer simply about visual appeal (or the cherry in the apple pie example, as given in my earlier article).",
-        tags: [{ color: "#91be8" }, { color: "#ff3838" }, { color: "#0aaaf4" }],
+        tags: [
+          { color: "#891BE8" },
+          { color: "#ff3838" },
+          { color: "#0aaaf4" },
+        ],
         comments: 34,
         likes: 24,
         attachments: 98,
@@ -168,7 +172,7 @@ export const listData: listType[] = [
       {
         header: "Linux or windows which is it",
         content: "Saving money – is something we would all like.",
-        tags: [{ color: "#0aaaf4" }, { color: "#e33233" }],
+        tags: [{ color: "#0AAAF4" }, {color: "#E33233"}],
         comments: 32,
         likes: 87,
         attachments: 31,
@@ -185,7 +189,11 @@ export const listData: listType[] = [
         header: "Be single minded",
         content:
           "Create a list with all possible keywords that fit to your product, service or business field.",
-        tags: [{ color: "#91be8" }, { color: "#ff3838" }, { color: "#0aaaf4" }],
+        tags: [
+          { color: "#891BE8" },
+          { color: "#ff3838" },
+          { color: "#0aaaf4" },
+        ],
         comments: 24,
         likes: 31,
         attachments: 17,
@@ -194,7 +202,7 @@ export const listData: listType[] = [
       {
         header: "Linux or windows which is it",
         content: "Saving money – is something we would all like.",
-        tags: [{ color: "#fbd1c" }],
+        tags: [{ color: "#F8BD1C" }],
         comments: 55,
         likes: 23,
         attachments: 19,

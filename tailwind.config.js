@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightGray: "#F4F4F4"
-      }
+        lightGray: "#F4F4F4",
+      },
     },
   },
   plugins: [],

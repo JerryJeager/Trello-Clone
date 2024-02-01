@@ -1,9 +1,11 @@
 import Header from "./components/layout/Header";
 
+//icons
 import heart from "/icons/Heart.svg";
 import hard from "/icons/Hard.svg";
 import globe from "/icons/globe-2-outline.svg";
 
+//user images
 import OvalCopy from "/images/Oval-Copy.svg";
 import Oval1 from "/images/Oval1.svg";
 import Oval2 from "/images/Oval2.svg";
@@ -23,9 +25,9 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mt-[5rem]">
-        <section className="pl-[5%] mt-4 ">
-          <div className="flex justify-between pr-[5%]">
+      <main className="mt-[3rem] overflow-x-scroll">
+        <section className="px-[5%] pt-4 lg:pt-8 pb-4 fixed z-10 w-screen bg-white mt-4 ">
+          <div className="flex justify-between">
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-[7rem]">
               <h2 className="font-medium lg:text-2xl">Brackets</h2>
               <div className="flex gap-2 lg:gap-3 items-center">
@@ -64,7 +66,7 @@ function App() {
                     />
                   </div>
                 ))}
-                <div className=" -translate-x-[300%] w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] bg-black flex items-center justify-center text-white rounded-full text-[10px] lg:text-[12px]">
+                <div className=" -translate-x-[300%] w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] bg-black flex items-center justify-center text-white rounded-full text-[9px] lg:text-[12px]">
                   +44
                 </div>
               </div>
@@ -72,7 +74,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="px-[5%] pb-8 mt-4 flex gap-6 overflow-x-scroll w-fit   ">
+        <section className="px-[5%] pb-8 mt-[7rem] flex gap-6 w-fit">
           {listData.map((list, index) => (
             <Cards key={index} {...list} />
           ))}

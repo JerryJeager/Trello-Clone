@@ -49,7 +49,7 @@ const SearchBar = () => {
         } ml-5 relative`}
       >
         <input
-          className="bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px]  lg:w-[400px] outline-none"
+          className="bg-lightGray rounded-3xl py-2 pl-4 pr-10 w-[200px]  lg:w-[500px] outline-none"
           type="text"
         />
         <button type="submit" className="absolute top-2 right-5">

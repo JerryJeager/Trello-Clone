@@ -3,10 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-.right-border{
+.right-border {
     @apply border-r border-r-black border-opacity-[0.1];
 }

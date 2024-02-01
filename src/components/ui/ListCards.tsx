@@ -1,10 +1,13 @@
+//image
+import rectangle7 from "/images/Photo7.png";
+//icons
 import combinedDots from "/icons/Combined-Shape.svg";
-
 import addIcon from "/icons/Group-2.svg";
-
 import heart from "/icons/Heart.svg";
 import messageSquare from "/icons/message-square-outline.svg";
 import attachOutline from "/icons/attach-outline.svg";
+
+//type
 import { listType } from "../../types";
 
 const Cards = ({ name, newCard, cards }: listType) => {
@@ -17,7 +20,9 @@ const Cards = ({ name, newCard, cards }: listType) => {
 
       {cards.map((card, index) => (
         <div className="bg-lightGray rounded-xl p-4 w-full mt-2" key={index}>
-          {card.image && <img src={card.image} className="w-full" alt="" />}
+          {card.image && (
+            <img src={card.image} className="w-full" alt="card-image" />
+          )}
           <div className="flex flex-wrap gap-2 mt-2">
             {card.tags.map((tag, tagIndex) => (
               <div
@@ -75,7 +80,16 @@ const Cards = ({ name, newCard, cards }: listType) => {
           </div>
         </div>
       ))}
-      {newCard && <div></div>}
+      {newCard && (
+        <div className="relative">
+          <img
+            src={rectangle7}
+            className="w-full mt-3"
+            alt="dotted-rectangle"
+          />
+          <p className="absolute top-1/2 text-center w-full">+ Add new card</p>
+        </div>
+      )}
     </div>
   );
 };
