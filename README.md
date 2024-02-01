@@ -3,6 +3,7 @@
 This is a clone of Trello's UI
 
 ## Getting Started
+Ensure you have Node.js and Typescript installed
 
 install dependencies 
 ```bash
