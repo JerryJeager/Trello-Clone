@@ -81,7 +81,7 @@ const Cards = ({ name, newCard, cards }: listType) => {
         </div>
       ))}
       {newCard && (
-        <div className="relative">
+        <div className="relative cursor-pointer">
           <img
             src={rectangle7}
             className="w-full mt-3"
